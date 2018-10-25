@@ -14,3 +14,27 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <header class="header-1">
+        <div class="container-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="logo-area">
+                            <h2>Logo</h2>
+                            <h4>Slogan</h4>
+                        </div>                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-area">
+                            <div class="social">Social</div>
+                            <div class="email">Email</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">Menu</div>
+                    <div class="col-md-3">Search</div>
+                </div>
+            </div>
+        </div>        
+    </header>

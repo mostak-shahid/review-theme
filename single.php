@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<section id="section-content" class="post">
+	<div class="contain-wrapper">
+		<div class="container">
 				<?php if ( have_posts() ) :?>		
 					<?php get_template_part( 'content', get_post_format() ) ?>					
 					<div class="post-linking">
@@ -16,6 +19,8 @@
 					<?php get_template_part( 'content', 'none' ); ?>
 				<?php endif;?>
 
-
+		</div>
+	</div>
+</section>
 <?php get_footer(); ?>
 
