@@ -22,9 +22,9 @@ jQuery(document).ready(function($) {
 		return false;
 	});	
 
-    $("[data-fancybox]").fancybox({
-    	loop : true,
-    });
+    // $("[data-fancybox]").fancybox({
+    // 	loop : true,
+    // });
     $(".lazy").Lazy();
     $(window).load(function(){
 		$(".sticky_menu").sticky({ topSpacing: 0 });

@@ -6,6 +6,6 @@
 				<?php else : ?>
 					<h2 class="post_title"><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
 					<div class="desc"><?php echo get_the_excerpt(); ?></div>
-					<a href="<?php echo get_the_permalink(); ?>" class="btn btn-info btn-small">Read More...</a>
+					<a href="<?php echo get_the_permalink(); ?>" class="btn btn-sm btn-blog">Read More</a>
 				<?php endif ?>
 			<?php endwhile; ?>

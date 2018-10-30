@@ -10,3 +10,79 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, one-column, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 Text Domain: review-theme
 */
+body {color: #666; background-color: #ececec; background-image: url(images/body.png); }
+a {-webkit-transition: all .3s ease-out; -moz-transition: all .3s ease-out; -o-transition: all .3s ease-out; transition: all .3s ease-out; text-decoration: none; } 
+a:visited, a:hover, a:active, a:focus {text-decoration: none; } 
+.h1, .h2, .h3, h1, h2, h3 {margin: 10px 0;}
+.h1, .h2, h1, h2 {font-weight: 700}
+.h1, h1 {font-size: 20px}
+.h2, h2 {font-size: 18px}
+.h3, h3 {font-size: 16px}
+.h4, h4 {font-size: 14px}
+.title-wrapper {text-align: left; background-color: #ececec;}
+.title {display: inline-block;margin: 0;padding: 0;background-color: #dddddd; line-height: 50px; padding-left: 20px;padding-right: 20px; font-size: 16px; text-transform: uppercase; font-weight: 700;position: relative;}
+.title:after {content: ''; position: absolute; right: -20px; top: 0; height: 100%; -ms-transform: skewX(-20deg); -webkit-transform: skewX(-20deg); transform: skewX(-20deg); border-right: 10px solid #ffffff; background-color: #dddddd; width: 30px; }
+.container {background: #f9f9f9;  padding-top: 30px; padding-bottom: 30px;}
+.btn-blog {margin-top: 15px;}
+.btn-blog, .nav-links .page-numbers {color: #ffffff; background-color: rgb(85, 85, 85);}
+.btn-blog:hover, .nav-links .page-numbers.current, .nav-links .page-numbers:hover {color: #ffffff; background-color: rgb(238, 59, 10);}
+.hidden-link {position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0}
+.nav-links .page-numbers {line-height: 30px;min-width: 30px; text-align: center;display: inline-block;}
+.nav-links .page-numbers.prev, .nav-links .page-numbers.next  {padding-left: 5px;padding-right: 5px;}
+header .container {padding-top: 15px;padding-bottom: 15px;}
+header .logo-area, header .contact-area {padding-bottom: 15px;}
+header .logo-area h2 {margin: 0;text-transform: uppercase; font-weight: 700; font-size: 32px;} 
+header .logo-area h2 a:link, header .logo-area h2 a:visited {color: #222; text-decoration: none; }
+header .logo-area h4 {font-size: 16px; margin: 0;} 
+header .contact-area {text-align: right;} 
+header .header-nav {background-color: #e93605;border-top-left-radius: 5px; padding-left: 10px;}
+header .header-nav:after {content: ''; width: 0; height: 0; border-style: solid; border-width: 60px 20px 0 0; border-color: #e93605 transparent transparent transparent; position: absolute; top: 0; right: -5px; }
+header .header-nav .mosmenu ul {display: inline-block; vertical-align: top; list-style: none; padding: 0; margin: 0; } 
+header .header-nav .mosmenu ul:before, header .header-nav .mosmenu ul:after {content: " "; /* 1 */ display: table; /* 2 */ } 
+header .header-nav .mosmenu ul:after {clear: both; } 
+header .header-nav .mosmenu ul li {display: block; position: relative; }
+header .header-nav .mosmenu ul > li {float: left; position: relative; }
+header .header-nav .mosmenu ul li a {display: block; text-decoration: none; padding: 20px 15px; color: #ffffff; }
+header .header-nav .mosmenu ul.sub-menu li a {white-space: nowrap; text-align: left; }
+header .header-nav .mosmenu ul .menu-item-has-children > a:after {font-family:'FontAwesome'; content: '\f107'; display: inline-block; padding-left: 10px; vertical-align: top; float: right; }
+header .header-nav .mosmenu ul .menu-item-has-children:hover > a:after {content: '\f106'; }
+header .header-nav .mosmenu ul li ul {display: none; position: absolute; z-index: 9; background-color: #595959; min-width: 100%; }
+header .header-nav .mosmenu ul li:hover > ul {display: block; }
+header .header-nav .mosmenu ul ul ul {top: 0; left: 100%; }
+header .header-nav .mosmenu ul ul li a {padding-top: 10px; padding-bottom: 10px; }
+header .header-nav .mosmenu ul ul li.open-left ul {right: 100%; left: auto; }
+header .header-nav .mosmenu ul li ul li {float: none; }
+header .header-nav .mosmenu .menu-right {text-align: right; }
+header .header-nav .mosmenu .menu-centered {text-align: center; }
+header .header-nav .mosmenu .menu-centered ul {text-align: left; }
+header .search-form {padding: 13px 0; background-color: #575757; border-bottom-right-radius: 5px;}
+header .search-form:before {content: ''; width: 0; height: 0; border-style: solid; border-width: 0 0 60px 20px; border-color: transparent transparent #575757 transparent; position: absolute; top: 0; left: -5px; }
+header .search-form form {max-width: 80%; margin: 0 auto;}
+/*title*/
+#section-title .container {padding-top: 0;padding-bottom: 15px;}
+#section-title .container .page-title {display: block;text-align: center;font-size: 24px; font-weight: 700}
+
+/*Slider*/
+#section-slider .container {padding-top: 0; }
+#section-slider .offer-unit {position: relative;text-align: center;border:5px solid #575757; padding: 15px;margin-top: 30px;}
+/*Content*/
+#section-content .container {border-top:1px solid #575757;border-bottom:1px solid #575757;}
+/*widgets*/
+#section-widgets .container {background-color: #434343;}
+#section-widgets .widget-title {font-size: 16px; margin: 0; margin-bottom: 10px; padding: 0; padding-bottom: 10px; color: #fff; font-weight: 700;}
+#section-widgets .widget ul {list-style-type: none; margin: 0; padding: 0; }
+#section-widgets .widget ul li {border-bottom: 1px solid #545454; }
+#section-widgets .widget ul li a:link, #section-widgets .widget ul li a:visited {color: #eee; text-decoration: none; padding: 7px 0; display: block; }
+#section-widgets .widget ul li a:hover {color: #ffffff; }
+
+/*Product*/
+#section-products .product-unit {margin-top: 20px; border: 1px solid #e4e4e4;}
+#section-products .product-unit .product-title {background: #f9f9f9; border-top: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4; padding: 10px;}
+#section-products .product-unit .product-title h4 {font-size: 16px;font-weight: 700;margin: 0;}
+#section-products .product-unit .product-desc {padding: 10px;}
+#section-products .product-unit .btn-group {display: table;width: 90%;margin: 0 auto 10px;}
+#section-products .product-unit .btn-group .btn {display: table-cell;float: none}
+
+/*Footer*/
+footer, footer a {color: #ffffff}
+footer .container {background-color: #383838;}
